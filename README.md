@@ -50,7 +50,7 @@ This is the repo for reproducing the results in our manuscript: *Pan, S., Brunto
 	- just parameterize the last linear layer of ShapeNet, we explicitly decouple time and space.
 	- with the help of this idea, we performed DMD analysis on a AMR datasets, for the very first time.
 
-- **We leverage SIREN to alleviate the problem of spectral-bias**
+- **We leverage [SIREN](https://proceedings.neurips.cc/paper/2020/hash/53c04118df112c13a8c34b38343b9c10-Abstract.html) to alleviate the problem of spectral-bias**
 	- turbulence are multi-scale, which makes standard MLP fail to capture small wavenumbers. 
 	
 	- we use SIREN in the ShapeNet
