@@ -176,23 +176,23 @@ Now we will varying the size of training data. Data is in `DATA_FINAL/ks_train_n
 
 	  - NIF
 
-	```bash
-	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_24.npz --NETWORK_TYPE NIF --N_S 56 --N_T 30 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-	```
+		```bash
+		python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_24.npz --NETWORK_TYPE NIF --N_S 56 --N_T 30 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+		```
 
 	- `train_29_swish`
 
 	  - MLP
 
-	```bash
-	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_29.npz --NETWORK_TYPE MLP --N_S 100 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-	```
+		```bash
+		python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_29.npz --NETWORK_TYPE MLP --N_S 100 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+		```
 
 	  - NIF
 	  
-	```bash
-	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_29.npz --NETWORK_TYPE NIF --N_S 56 --N_T 30 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-	```
+		```bash
+		python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_29.npz --NETWORK_TYPE NIF --N_S 56 --N_T 30 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+		```
 
 ### Test and Visualization
 
