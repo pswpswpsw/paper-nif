@@ -80,17 +80,18 @@ still, we use the same training data as before, the one with 20 simulations. thu
 - each subfolder represents the amount of model parameters. 
 - `1_less`
 
-  - NIF,  6935 parameters
+  - NIF, 6935 parameters
 
-```bash
-python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_20.npz --NETWORK_TYPE NIF --N_S 30 --N_T 30 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-```
+	```bash
+	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_20.npz --NETWORK_TYPE NIF --N_S 30 --N_T 30 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+	```
 
   - MLP, 7135 parameters
 
-```bash
-python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 58 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-```
+	```bash
+	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 58 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+	```
+	
 - `1.5_lm`
 
   - NIF, 10254 parameters
