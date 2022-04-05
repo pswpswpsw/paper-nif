@@ -83,12 +83,12 @@ Since we are working with PDE, the data is huge and stored here in my [Google Dr
 
 Following the instructions in each link below
 
-[Section 2: compare with deeponet]
-[Section 3.1: Data-fit surrogate modeling]
-[Section 3.2: Mesh-agnostic Autoencoder on AMR]
-[Section 3.3 and 3.4: Mesh-agnostic dimension reduction for 3D turbulence]
-[Section 3.5: Mesh-agnostic linear representation]
-[Section 3.6: Sparse sensing on sea surface temperature data]
+[Section 2: compare with deeponet](https://github.com/pswpswpsw/paper-nif/tree/main/sec_2_Compare_with_deeponet)
+[Section 3.1: Data-fit surrogate modeling](https://github.com/pswpswpsw/paper-nif/tree/main/sec_3_1_Data_fit_Surrogate-modeling)
+[Section 3.2: Mesh-agnostic Autoencoder on AMR](https://github.com/pswpswpsw/paper-nif/tree/main/sec_3_2_Better_compression_vs_cnn_pod)
+[Section 3.3 and 3.4: Mesh-agnostic dimension reduction for 3D turbulence](https://github.com/pswpswpsw/paper-nif/tree/main/sec_3_3and4_Mesh-agnostic-dimension-reduction-3d-turbulence)
+[Section 3.5: Mesh-agnostic linear representation](https://github.com/pswpswpsw/paper-nif/tree/main/sec_3_5_Mesh-agnostic-linear-subspace)
+[Section 3.6: Sparse sensing on sea surface temperature data](https://github.com/pswpswpsw/paper-nif/tree/main/sec_3_6_Sparse_Sensing_SST)
 
 
 <!-- CONTRIBUTING -->
