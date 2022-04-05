@@ -105,18 +105,20 @@ python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n
 
 	- MLP, 24971 parameters
 		- ```bash
-		  python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 110 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+		python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 110 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
 		  ```
 
 - `3_high`
 	- NIF, 34415 parameters
 		- ```bash
 python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE NIF --N_S 70 --N_T 60 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-      ```
+		  ```
+
 	- MLP, 34711 parameters
 		- ```bash
   python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 130 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
 		  ```
+
 
 ### Test and Visualization
 
