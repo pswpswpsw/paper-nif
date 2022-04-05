@@ -30,7 +30,7 @@ This is the repo for reproducing the results in our manuscript: *Pan, S., Brunto
 - **Existing state-of-the-art methods for dimensionality reduction are not really designed for fluid dynamics**
   - Proper Orthongonal Decomposition (POD) requires a fixed mesh for all parameters at all times, and it is linear. 
   - Convolutional Autoencoder (CAE) *downplays* fluid dynamics as images, while cubic memory scaling in 3D and multi-scale pheonomeon in the nature of turbulence limits the potential of such architecture for large-scale realistic flows. 
-	- None of the above methods can be directly applied to adaptive mesh refinement data, which has been the state-of-the-art in many scientific computing community, (e.g., combustion simulation and computational astrophysics).
+  - None of the above methods can be directly applied to adaptive mesh refinement data, which has been the state-of-the-art in many scientific computing community, (e.g., combustion simulation and computational astrophysics).
   
 - **Key observation: parameter, time, space are not born equal**. 
 	- we query space, tens of thousands times, more than time and parameter space.
