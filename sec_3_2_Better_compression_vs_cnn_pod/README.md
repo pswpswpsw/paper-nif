@@ -18,31 +18,31 @@ Here we will run three different types of models with different configurations. 
 	let's run POD for datasets with Cart-interpolation `32x64`, `64x128`, `128x256`. Rank ranges from 1 to 8.
 	
 ```bash
-	cd POD
-	bash RUN_ALL_POD.sh
+cd POD
+bash RUN_ALL_POD.sh
 ```
 - CNN
 	now we run convolutional autoencoder (CAE) for the same setup. however, we can also study the effects of varying channel size from `2-4-8` to `16-32-64`. `swish` activation function is used. 
 ```bash
-	cd ../CNN
-	bash RUN_ALL_CNN.sh
+cd ../CNN
+bash RUN_ALL_CNN.sh
 ```
 - NIF
 	finally we can run NIF (with a small parameter net weights ini, scale = 1e-2. also with jacobian and hessian regularization to make the manifold smoother.). but we don't need to carte-interpolate the data. we just directly work on the AMR dataset. you can tune the batch size according to your GPU memory size. 
 ```bash
-	cd ../NIF
-	
-	# rank = 1
-	python run_nif_txy_siren_rt_autoencoder.py --W0_SCALE 1e-2 --ACT_REG 1.0 --TRAIN_DATA ../DATA/rt-full-amr-siren-with-sensor-train-n.npz --TEST_DATA ../DATA/rt-256x512-cnn.npz --NUM_HIDDEN_SPACE 128 --LAYER_HIDDEN_SPACE 2 --NUM_HIDDEN_TIME 64 --LAYER_HIDDEN_TIME 2 --RANK_PARA 1 --BATCH_SIZE 3150 --NUM_SENSOR 32
+cd ../NIF
 
-	# rank = 2
-	python run_nif_txy_siren_rt_autoencoder.py --W0_SCALE 1e-2 --ACT_REG 1.0 --TRAIN_DATA ../DATA/rt-full-amr-siren-with-sensor-train-n.npz --TEST_DATA ../DATA/rt-256x512-cnn.npz --NUM_HIDDEN_SPACE 128 --LAYER_HIDDEN_SPACE 2 --NUM_HIDDEN_TIME 64 --LAYER_HIDDEN_TIME 2 --RANK_PARA 2 --BATCH_SIZE 3150 --NUM_SENSOR 32
+# rank = 1
+python run_nif_txy_siren_rt_autoencoder.py --W0_SCALE 1e-2 --ACT_REG 1.0 --TRAIN_DATA ../DATA/rt-full-amr-siren-with-sensor-train-n.npz --TEST_DATA ../DATA/rt-256x512-cnn.npz --NUM_HIDDEN_SPACE 128 --LAYER_HIDDEN_SPACE 2 --NUM_HIDDEN_TIME 64 --LAYER_HIDDEN_TIME 2 --RANK_PARA 1 --BATCH_SIZE 3150 --NUM_SENSOR 32
 
-	# rank = 4
-	python run_nif_txy_siren_rt_autoencoder.py --W0_SCALE 1e-2 --ACT_REG 1.0 --TRAIN_DATA ../DATA/rt-full-amr-siren-with-sensor-train-n.npz --TEST_DATA ../DATA/rt-256x512-cnn.npz --NUM_HIDDEN_SPACE 128 --LAYER_HIDDEN_SPACE 2 --NUM_HIDDEN_TIME 64 --LAYER_HIDDEN_TIME 2 --RANK_PARA 4 --BATCH_SIZE 3150 --NUM_SENSOR 32
+# rank = 2
+python run_nif_txy_siren_rt_autoencoder.py --W0_SCALE 1e-2 --ACT_REG 1.0 --TRAIN_DATA ../DATA/rt-full-amr-siren-with-sensor-train-n.npz --TEST_DATA ../DATA/rt-256x512-cnn.npz --NUM_HIDDEN_SPACE 128 --LAYER_HIDDEN_SPACE 2 --NUM_HIDDEN_TIME 64 --LAYER_HIDDEN_TIME 2 --RANK_PARA 2 --BATCH_SIZE 3150 --NUM_SENSOR 32
 
-	# rank = 8
-	python run_nif_txy_siren_rt_autoencoder.py --W0_SCALE 1e-2 --ACT_REG 1.0 --TRAIN_DATA ../DATA/rt-full-amr-siren-with-sensor-train-n.npz --TEST_DATA ../DATA/rt-256x512-cnn.npz --NUM_HIDDEN_SPACE 128 --LAYER_HIDDEN_SPACE 2 --NUM_HIDDEN_TIME 64 --LAYER_HIDDEN_TIME 2 --RANK_PARA 8 --BATCH_SIZE 3150 --NUM_SENSOR 32
+# rank = 4
+python run_nif_txy_siren_rt_autoencoder.py --W0_SCALE 1e-2 --ACT_REG 1.0 --TRAIN_DATA ../DATA/rt-full-amr-siren-with-sensor-train-n.npz --TEST_DATA ../DATA/rt-256x512-cnn.npz --NUM_HIDDEN_SPACE 128 --LAYER_HIDDEN_SPACE 2 --NUM_HIDDEN_TIME 64 --LAYER_HIDDEN_TIME 2 --RANK_PARA 4 --BATCH_SIZE 3150 --NUM_SENSOR 32
+
+# rank = 8
+python run_nif_txy_siren_rt_autoencoder.py --W0_SCALE 1e-2 --ACT_REG 1.0 --TRAIN_DATA ../DATA/rt-full-amr-siren-with-sensor-train-n.npz --TEST_DATA ../DATA/rt-256x512-cnn.npz --NUM_HIDDEN_SPACE 128 --LAYER_HIDDEN_SPACE 2 --NUM_HIDDEN_TIME 64 --LAYER_HIDDEN_TIME 2 --RANK_PARA 8 --BATCH_SIZE 3150 --NUM_SENSOR 32
 ```
 
 	then you can infer the trained NIF model for prediction on training and testing data. here we use the models trained after 800 epochs and we save the prediction inside that checkpoint folder. 
