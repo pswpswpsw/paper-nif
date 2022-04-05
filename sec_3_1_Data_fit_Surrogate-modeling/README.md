@@ -129,7 +129,7 @@ still, we use the same training data as before, the one with 20 simulations. thu
 	```
 
   - MLP, 34711 parameters
-  
+
 	```bash
 	python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 130 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
 	```
@@ -155,29 +155,29 @@ Now we will varying the size of training data. Data is in `DATA_FINAL/ks_train_n
 - go to folder `ks_0`, you can find that we have three additional folders associated with this study. they are `train_15_swish`, `train_24_swish`, `train_29_swish`.
 - go deep to each of the above folders until you find `train_datafit_surrogate.py` and then run the following commands
 	- `train_15_swish`
-		- MLP
+	  - MLP
 	```bash
 	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_15.npz --NETWORK_TYPE MLP --N_S 100 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
 	```
-		- NIF
+	  - NIF
 	```bash
 	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_15.npz --NETWORK_TYPE NIF --N_S 56 --N_T 30 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
 	```
 	- `train_24_swish`
-		- MLP
+	  - MLP
 	```bash
 	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_24.npz --NETWORK_TYPE MLP --N_S 100 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
 	```
-		- NIF
+	  - NIF
 	```bash
 	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_24.npz --NETWORK_TYPE NIF --N_S 56 --N_T 30 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
 	```
 	- `train_29_swish`
-		- MLP
+	  - MLP
 	```bash
 	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_29.npz --NETWORK_TYPE MLP --N_S 100 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
 	```
-		- NIF
+	  - NIF
 	```bash
 	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_29.npz --NETWORK_TYPE NIF --N_S 56 --N_T 30 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
 	```
