@@ -91,41 +91,48 @@ still, we use the same training data as before, the one with 20 simulations. thu
 	```bash
 	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 58 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
 	```
-	
+
 - `1.5_lm`
 
   - NIF, 10254 parameters
 
-```bash
-python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_20.npz --NETWORK_TYPE NIF --N_S 38 --N_T 29 --ACT swish --L_R
-```
+	```bash
+	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_20.npz --NETWORK_TYPE NIF --N_S 38 --N_T 29 --ACT swish --L_R
+	```
+  
   - MLP, 10291 parameters 		
-```bash
-python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 70 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-```
+
+	```bash
+	python train_datafit_surrogate.py --TRAIN_DATA ../../../../DATA_FINAL/ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 70 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+	```
 
 - `2.5_mh`
+
   - NIF, 24966 parameters
-```bash
-python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE NIF --N_S 60 --N_T 47 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-```
+
+	```bash
+	python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE NIF --N_S 60 --N_T 47 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+	```
 
   - MLP, 24971 parameters
 
-```bash
-python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 110 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-```
+	```bash
+	python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 110 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+	```
 
 - `3_high`
+
   - NIF, 34415 parameters
-```bash
-python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE NIF --N_S 70 --N_T 60 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-```
+
+	```bash
+	python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE NIF --N_S 70 --N_T 60 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+	```
 
   - MLP, 34711 parameters
-```bash
-python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 130 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
-```
+  
+	```bash
+	python train_datafit_surrogate.py --TRAIN_DATA ../../../ks_train_n_20.npz --NETWORK_TYPE MLP --N_S 130 --N_T 0 --ACT swish --L_R 0.001 --BATCH_SIZE 1024 --EPOCH 40001
+	```
 
 
 ### Test and Visualization
