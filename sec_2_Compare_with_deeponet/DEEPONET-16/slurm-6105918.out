@@ -1,0 +1,99 @@
+Unloading the anaconda2 module (if loaded)...
+Loaded dependency: anaconda3/2020.11
+AI/Version: anaconda3.2020.11
+-----------------------------
+
+Description
+-----------
+The modulefile AI/anaconda3.2020.11 provides a unified, rich, anaconda3 based
+environment for Artificial Intelligence(AI)/Machine Learning(ML)/Big Data(BD)
+on top of based on Python 3.
+
+Module contents
+---------------
+Several popular AI/ML/BD packages are included in this environment, such as:
+    tensorflow-gpu, theano, keras-gpu, pytorch, opencv, pandas, scikit-learn,
+scikit-image etc.
+
+To check the full list of available packages in this environment, first
+activate it and then run the command
+    conda list
+
+Main packages included in this module:
+* astropy 4.2
+* blas 1.0
+* bokeh 2.2.3
+* cudatoolkit 10.0.130
+* cudnn 7.6.5
+* h5py 2.8.0
+* hdf5 1.10.2
+* ipython 7.19.0
+* jupyter 1.0.0
+* jupyterlab 2.2.6
+* keras-gpu 2.3.1
+* matplotlib 3.3.2
+* mkl 2019.4
+* nccl 1.3.5
+* networkx 2.5
+* ninja 1.10.2
+* nltk 3.5
+* notebook 6.1.6
+* numba 0.51.2
+* numpy 1.17.0
+* opencv 3.4.2
+* pandas 1.2.0
+* pillow 8.1.0
+* pip 20.3.3
+* python 3.7.9
+* pytorch 1.5.0
+* scikit-learn 0.23.2
+* scipy 1.5.2
+* seaborn 0.11.1
+* tensorboard 2.0.0
+* tensorflow-gpu 2.0.0
+* theano 1.0.4
+
+If you need to further customize this environment (e.g., install additional
+packages, or upgrade a particular package),
+you should first clone this environment as follows:
+    conda create --prefix <path to a dir in which you can write> --clone
+$AI_ENV
+Then activate the newly spawned environment and proceed with your
+customization.
+
+To get further help with conda usage, you can try one of the following:
+    conda -h
+    conda <command> -h
+
+Activate the module
+-------------------
+[1;32mNew!:[0m You are NOT required to manually activate this module anymore.
+
+It should get activated automatically after running the module load command
+since the following commands are being run on your behalf:
+    # module load AI/anaconda3.2020.11
+    # source /opt/packages/anaconda3/2020.11/etc/profile.d/conda.sh # conda
+init
+    # conda activate $AI_ENV
+    # (/opt/packages/AI/anaconda3-tf2.2020.11) USERNAME@BRIDGES-2:~ $ # << Your
+prompt should have changed to something similar.
+
+
+WARNING:tensorflow:From /opt/packages/AI/anaconda3-tf2.2020.11/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:65: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From train_datafit_surrogate.py:119: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /opt/packages/AI/anaconda3-tf2.2020.11/lib/python3.7/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From train_datafit_surrogate.py:364: simple_save (from tensorflow.python.saved_model.simple_save) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.simple_save.
+WARNING:tensorflow:From /opt/packages/AI/anaconda3-tf2.2020.11/lib/python3.7/site-packages/tensorflow_core/python/saved_model/signature_def_utils_impl.py:201: build_tensor_info (from tensorflow.python.saved_model.utils_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.utils.build_tensor_info or tf.compat.v1.saved_model.build_tensor_info.
+INFO:tensorflow:Assets added to graph.
+INFO:tensorflow:No assets to write.
+INFO:tensorflow:SavedModel written to: ./saved_model_ckpt_800000/saved_model.pb

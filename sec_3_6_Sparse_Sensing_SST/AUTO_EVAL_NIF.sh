@@ -1,0 +1,14 @@
+python run_nif_ss_832_train_ALL_test.py 5
+python run_nif_ss_832_train_ALL_test.py 6
+python run_nif_ss_832_train_ALL_test.py 7
+python run_nif_ss_832_train_ALL_test.py 8
+python run_nif_ss_832_train_ALL_test.py 9
+python run_nif_ss_832_train_ALL_test.py 10
+python run_nif_ss_832_train_ALL_test.py 20
+python run_nif_ss_832_train_ALL_test.py 50
+python run_nif_ss_832_train_ALL_test.py 100
+python run_nif_ss_832_train_ALL_test.py 200
+python run_nif_ss_832_train_ALL_test.py 300
+python run_nif_ss_832_train_ALL_test.py 400
+python run_nif_ss_832_train_ALL_test.py 500
+python run_nif_ss_832_train_ALL_test.py 600
