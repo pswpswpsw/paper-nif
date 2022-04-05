@@ -75,7 +75,7 @@ This is the repo for reproducing the results in our manuscript: *Pan, S., Brunto
 
 ### Data and pre-existing trained models
 
-Since we are working with PDE, the data is huge and stored here in my [Google Drive](https://drive.google.com/drive/folders/1CfMUKBfuo92BN_qIWbNxzfLoxRradFRw?usp=sharing). Please follow the `README.md` file inside.
+Since we are working with PDE, the data is huge (around 37GB) and stored here in my [Google Drive](https://drive.google.com/drive/folders/1CfMUKBfuo92BN_qIWbNxzfLoxRradFRw?usp=sharing). Please follow the `README.md` file inside.
 
 
 <!-- USAGE EXAMPLES -->
