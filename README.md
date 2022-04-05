@@ -1,7 +1,7 @@
 
 # Neural Implicit Flow
 
-This is the repo for reproducing the results in our manuscript **Pan, S., Brunton, S., & Kutz, N. (2021). Neural Implicit Flow: A mesh-agnostic representation paradigm for spatio-temporal fields. Bulletin of the American Physical Society, 66.**. 
+This is the repo for reproducing the results in our manuscript: *Pan, S., Brunton, S., & Kutz, N. (2021). Neural Implicit Flow: A mesh-agnostic representation paradigm for spatio-temporal fields. Bulletin of the American Physical Society, 66.*. 
 
 <p align="center">
   <img src="./misc/myimage.gif" alt="animated" />
@@ -81,7 +81,7 @@ Since we are working with PDE, the data is huge and stored here in my [Google Dr
 <!-- USAGE EXAMPLES -->
 ## Reproducing the results
 
-Following the instructions in each link below
+To reproduce the corresponding section in our paper, following the instructions in each link below:
 
 [Section 2: compare with deeponet](https://github.com/pswpswpsw/paper-nif/tree/main/sec_2_Compare_with_deeponet)
 
