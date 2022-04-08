@@ -1,7 +1,7 @@
 
 # Neural Implicit Flow
 
-This is the repo for reproducing the results in our manuscript: *Pan, S., Brunton, S., & Kutz, N. (2021). Neural Implicit Flow: A mesh-agnostic representation paradigm for spatio-temporal fields. Bulletin of the American Physical Society, 66.*. 
+This is the repo for reproducing the results in our manuscript: [*Pan, S., Brunton, S., & Kutz, N. (2021). Neural Implicit Flow: A mesh-agnostic representation paradigm for spatio-temporal fields. Bulletin of the American Physical Society, 66.*](https://arxiv.org/abs/2204.03216). 
 
 <p align="center">
   <img src="./misc/myimage.gif" alt="animated" />
@@ -123,4 +123,11 @@ Shaowu Pan - email: shawnpan@uw.edu
 ## Citation
 
 
-coming soon...
+@misc{pan2022neural,
+      title={Neural Implicit Flow: a mesh-agnostic dimensionality reduction paradigm of spatio-temporal data}, 
+      author={Shaowu Pan and Steven L. Brunton and J. Nathan Kutz},
+      year={2022},
+      eprint={2204.03216},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
