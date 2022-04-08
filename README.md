@@ -116,6 +116,14 @@ Contributions are what make the open source community such an amazing place to b
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
+## FAQ
+
+**Q: Why there is another NIF package on Github from you?**
+
+A: I believe it is easier to learn how it works in a nut-shell, with a **single, self-contained Python script**, instead of going to `maze` of a package. You will find that codes in each application are fully independent.
+
+
+
 <!-- CONTACT -->
 ## Contact
 
