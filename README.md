@@ -71,6 +71,7 @@ This is the repo for reproducing the results in our manuscript: [*Pan, S., Brunt
 - scipy
 - numpy
 - netCDF4
+- [filprofiler](https://github.com/pythonspeed/filprofiler)
 - tensorflow 2
 
 ### Data and pre-existing trained models
@@ -122,7 +123,7 @@ Shaowu Pan - email: shawnpan@uw.edu
 
 ## Citation
 
-
+```
 @misc{pan2022neural,
       title={Neural Implicit Flow: a mesh-agnostic dimensionality reduction paradigm of spatio-temporal data}, 
       author={Shaowu Pan and Steven L. Brunton and J. Nathan Kutz},
@@ -131,3 +132,4 @@ Shaowu Pan - email: shawnpan@uw.edu
       archivePrefix={arXiv},
       primaryClass={cs.LG}
 }
+```
