@@ -82,7 +82,7 @@ Since we are working with PDE, the data is huge (around 37GB) and stored here in
 <!-- USAGE EXAMPLES -->
 ## Reproducing the results
 
-To reproduce the corresponding section in our paper, following the instructions in each link below:
+To reproduce the corresponding section in our paper, **please first download the full data in the above section**. Then you can follow the instructions in each link below:
 
 [Section 2: compare with deeponet](https://github.com/pswpswpsw/paper-nif/tree/main/sec_2_Compare_with_deeponet)
 
