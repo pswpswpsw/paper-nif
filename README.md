@@ -132,12 +132,10 @@ Shaowu Pan - email: shawnpan@uw.edu
 ## Citation
 
 ```
-@misc{pan2022neural,
-      title={Neural Implicit Flow: a mesh-agnostic dimensionality reduction paradigm of spatio-temporal data}, 
-      author={Shaowu Pan and Steven L. Brunton and J. Nathan Kutz},
-      year={2022},
-      eprint={2204.03216},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@article{pan2022neural,
+  title={Neural Implicit Flow: a mesh-agnostic dimensionality reduction paradigm of spatio-temporal data},
+  author={Pan, Shaowu and Brunton, Steven L and Kutz, J Nathan},
+  journal={arXiv preprint arXiv:2204.03216},
+  year={2022}
 }
 ```
