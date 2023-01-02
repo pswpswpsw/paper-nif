@@ -10,6 +10,8 @@
 python prepare_3dhit_training_data.py
 	```
 
+- to compare against other NeRF related frameworks, we also prepared a smaller dataset, which is only 2D: `2dhit-txy-128-20-uvw.npz` (10.5 mb). Make sure you have put this file into the `./DATA` folder.
+
 ## Training
 - go to `run` folder.
 	```bash
@@ -109,10 +111,8 @@ cd ../
 jupyter notebook plot_compare_MLP_NIF_inference_memory_time_error.ipynb
 ```
 
-## Compare with other variants related to NeRF
+# Compare with other variants related to NeRF
 
-In the following figure, we compared NIF with standard MLP, [SIREN](https://proceedings.neurips.cc/paper/2020/hash/53c04118df112c13a8c34b38343b9c10-Abstract.html) and [Fourier Feature Networks](https://proceedings.neurips.cc/paper/2020/hash/55053683268957697aa39fba6f231c68-Abstract.html). Each row corresponds to a different width size, which approximately determines the computational complexity during inference stage. We found NIF outperforms other frameworks especially when the width size is small (e.g., 36).
+We also compared NIF with standard MLP, [SIREN](https://proceedings.neurips.cc/paper/2020/hash/53c04118df112c13a8c34b38343b9c10-Abstract.html) and [Fourier Feature Networks](https://proceedings.neurips.cc/paper/2020/hash/55053683268957697aa39fba6f231c68-Abstract.html). Each row corresponds to a different width size, which approximately determines the computational complexity during inference stage. We found NIF outperforms other frameworks especially when the width size is small (e.g., 36).
 
-<p align="center">
-  <img src="./misc/compare.gif" alt="animated" />
-</p>
+To compare, 
