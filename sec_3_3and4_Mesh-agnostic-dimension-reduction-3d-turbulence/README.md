@@ -94,20 +94,25 @@ python run_nif_txyz_siren_hit_mlp-pn-uvw.py --OMEGA_X 30. --TRAIN_DATA ../../DAT
 ## Benchmark the inference time and memory usage
 
 - here we will compare inference time between MLP and NIF when their computational complexity with respect to space is comparable (i.e. width for the MLP = width for the ShapeNet)
-- you need to install [fil-profile](https://github.com/pythonspeed/filprofiler for memory profiling
+- you need to install [fil-profile](https://github.com/pythonspeed/filprofiler for memory profiling)
 - now you can run the profiling **OR** you can just checkout the existing logs
 ```bash
 cd ../
-bash COMPARE_MEM_MLP.sh > MLP_MEM_OUTPUT
-bash COMPARE_MEM_NIF.sh > NIF_MEM_OUTPUT
-bash COMPARE_TIME_MLP.sh > MLP_TIME_OUTPUT
-bash COMPARE_TIME_NIF.sh > NIF_TIME_OUTPUT
+bash COMPARE_MEM_MLP.sh
+bash COMPARE_MEM_NIF.sh
+bash COMPARE_TIME_MLP.sh
+bash COMPARE_TIME_NIF.sh
 ```
-- now we can plot the benchmark test on inference time and memory usage. note that you need to manually input the memory usage and inference time in this notebook, which come from (the above **OUTPUT** files) by inspecting the memory increment resulting from the neural network model itself, and the network inference time.
+- now we can plot the benchmark test on inference time and memory usage. note that you need to manually input the memory usage and inference time in this notebook, which come from (the above fil-profiler pop up windows) by inspecting the memory increment resulting from the neural network model itself, and the network inference time.
 ```bash
 cd ../
 jupyter notebook plot_compare_MLP_NIF_inference_memory_time_error.ipynb
 ```
 
+## Compare with other variants related to NeRF
 
+In the following figure, we compared NIF with standard MLP, [SIREN](https://proceedings.neurips.cc/paper/2020/hash/53c04118df112c13a8c34b38343b9c10-Abstract.html) and [Fourier Feature Networks](https://proceedings.neurips.cc/paper/2020/hash/55053683268957697aa39fba6f231c68-Abstract.html). Each row corresponds to a different width size, which approximately determines the computational complexity during inference stage. We found NIF outperforms other frameworks especially when the width size is small (e.g., 36).
 
+<p align="center">
+  <img src="./misc/compare.gif" alt="animated" />
+</p>
