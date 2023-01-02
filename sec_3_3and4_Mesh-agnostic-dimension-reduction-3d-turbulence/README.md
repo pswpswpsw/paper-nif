@@ -111,8 +111,22 @@ cd ../
 jupyter notebook plot_compare_MLP_NIF_inference_memory_time_error.ipynb
 ```
 
-# Compare with other variants related to NeRF
+## Compare against other frameworks over a toy example: 2D video of turbulence. 
 
 We also compared NIF with standard MLP, [SIREN](https://proceedings.neurips.cc/paper/2020/hash/53c04118df112c13a8c34b38343b9c10-Abstract.html) and [Fourier Feature Networks](https://proceedings.neurips.cc/paper/2020/hash/55053683268957697aa39fba6f231c68-Abstract.html). Each row corresponds to a different width size, which approximately determines the computational complexity during inference stage. We found NIF outperforms other frameworks especially when the width size is small (e.g., 36).
 
-To compare, 
+## Training
+
+To compare, please go to `./compare_2d_with_variants`, and go to each folder to run the experiments. Detailed command-line argument can be found in those scripts with affix `.sh`. 
+
+## Evaluation
+
+Once the experiments are done, you can evaluate the network performance by running
+```bash
+bash auto.sh
+```
+Then a `pred.npz` file will be saved in the corresponding model folder.
+
+### Visualization
+
+Finally, to reproduce the figure 15 and table 2 (in the latest version), go to `plot_compare_2dU_velo.ipynb` for details.
