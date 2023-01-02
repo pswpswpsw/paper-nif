@@ -38,6 +38,10 @@ This is the repo for reproducing the results in our manuscript: [*Pan, Shaowu, S
 	- a typical fluid dynamist/combustion engineer/aerodynamic engineers's task in analyzing spatial datasets is to heavily compute spatial-related quantity: spatial gradients, spatial average, total heat release, surface heat transfer, etc.
 
 ## Highlights
+	
+<p align="center">
+  <img src="./misc/compare.gif" alt="animated" />
+</p>
 
 - **We decouple spatial complexity (e.g., multi-scale), away from parametric complexity (e.g., bifurcations), and temporal complexity (chaos) to obtain a latent representation**
 	
@@ -64,10 +68,7 @@ This is the repo for reproducing the results in our manuscript: [*Pan, Shaowu, S
 - **Sparse sensing with NIF**
 	- We combine POD-QDEIM for sensor placement and NIF for learning spatial-temporal fields
 	- For the Sea Surface Temperature data, NIF-based framework significantly outperforms the best model from POD-QDEIM in predicting unseen testing data.
-	
-<p align="center">
-  <img src="./misc/compare.gif" alt="animated" />
-</p>
+
 
 ## Getting Started
 
