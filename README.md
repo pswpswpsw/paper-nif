@@ -82,7 +82,7 @@ This is the repo for reproducing the results in our manuscript: [*Pan, Shaowu, S
 
 ### Data and pre-existing trained models
 
-Since we are working with PDE, the data is huge (around 37GB) and stored here in my [Box Drive](https://rpi.box.com/s/rsa94k5xmwkky0te98s1quyitrsiuh7f). Please follow the `README.md` file inside.
+Since we are working with PDE, the data is huge (around 37GB) and stored here in my [Box Drive](https://rpi.box.com/s/vbuz65zdt23rnhxipd68pwdwv70nl630). Please follow the `README.md` file inside.
 
 
 <!-- USAGE EXAMPLES -->
